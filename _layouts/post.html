@@ -1,0 +1,172 @@
+---
+layout: base
+---
+
+    <div class="container">
+      <div class="row">
+        <!-- Latest Posts -->
+        <main class="post blog-post col-lg-8">
+          <div class="container">
+            <div class="post-single">
+              <div class="post-thumbnail"><img src="{{site.baseurl}}/img/blog-post-3.jpeg" alt="..." class="img-fluid"></div>
+              <div class="post-details">
+                <div class="post-meta d-flex justify-content-between">
+                </div>
+                <h1>工程对社会的影响<a href="#"><i class="fa fa-bookmark-o"></i></a></h1>
+                <div class="post-footer d-flex align-items-center flex-column flex-sm-row"><a href="#" class="author d-flex align-items-center flex-wrap">
+                    <div class="title"><span>小蔡</span></div></a>
+                  <div class="d-flex align-items-center flex-wrap">
+                    <div class="date"><i class="icon-clock"></i>两年前</div>
+                    <div class="views"><i class="icon-eye"></i> 500</div>
+                    <div class="comments meta-last"><i class="icon-comment"></i>12</div>
+                  </div>
+                </div>
+                <div class="post-body">
+                  <p class="lead">{{content}}</p>
+                  <p> <img src="{{site.baseurl}}/img/featured-pic-3.jpeg" alt="..." class="img-fluid"></p>
+                </div>
+                <div class="posts-nav d-flex justify-content-between align-items-stretch flex-column flex-md-row">{% if page.previous %}<a href="{{site.baseurl}}/{{page.previous.url}}" class="prev-post text-left d-flex align-items-center">
+                    <div class="icon prev"><i class="fa fa-angle-left"></i></div>
+                    <div class="text"><strong class="text-primary">上一页</strong>
+                    </div></a> {% endif %} {% if page.next %}<a href="{{site.baseurl}}/{{page.next.url}}" class="next-post text-right d-flex align-items-center justify-content-end">
+                    <div class="text"><strong class="text-primary">下一页</strong>
+                    </div>
+                    <div class="icon next"><i class="fa fa-angle-right">   </i></div></a>{% endif %}</div>
+
+                <div class="post-comments">
+                  <header>
+                    <h3 class="h6">发表评论<span class="no-of-comments">(3)</span></h3>
+                  </header>
+                  <div class="comment">
+                    <div class="comment-header d-flex justify-content-between">
+                      <div class="user d-flex align-items-center">
+                        <div class="image"><img src="{{site.baseurl}}/img/user.svg" alt="..." class="img-fluid rounded-circle"></div>
+                        <div class="title"><strong>小蔡</strong><span class="date">2019 11 20</span></div>
+                      </div>
+                    </div>
+                    <div class="comment-body">
+                      <p>写得特别好</p>
+                    </div>
+                  </div>
+                  <div class="comment">
+                    <div class="comment-header d-flex justify-content-between">
+                      <div class="user d-flex align-items-center">
+                        <div class="image"><img src="{{site.baseurl}}/img/user.svg" alt="..." class="img-fluid rounded-circle"></div>
+                        <div class="title"><strong>小蔡</strong><span class="date">2019 11 20</span></div>
+                      </div>
+                    </div>
+                    <div class="comment-body">
+                      <p>小蔡牛逼</p>
+                    </div>
+                  </div>
+                  <div class="comment">
+                    <div class="comment-header d-flex justify-content-between">
+                      <div class="user d-flex align-items-center">
+                        <div class="image"><img src="{{site.baseurl}}/img/user.svg" alt="..." class="img-fluid rounded-circle"></div>
+                        <div class="title"><strong>小蔡</strong><span class="date">2019 11 20</span></div>
+                      </div>
+                    </div>
+                    <div class="comment-body">
+                      <p>博主牛逼</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="add-comment">
+                  <header>
+                    <h3 class="h6">回复</h3>
+                  </header>
+                  <form action="#" class="commenting-form">
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                        <input type="text" name="username" id="username" placeholder="名字" class="form-control">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <input type="email" name="username" id="useremail" placeholder="电子邮箱" class="form-control">
+                      </div>
+                      <div class="form-group col-md-12">
+                        <textarea name="usercomment" id="usercomment" placeholder="填写你的评论" class="form-control"></textarea>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <button type="submit" class="btn btn-secondary">提交评论</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <aside class="col-lg-4">
+          <!-- Widget [Search Bar Widget]-->
+          <div class="widget search">
+            <header>
+              <h3 class="h6">搜索博客</h3>
+            </header>
+            <form action="#" class="search-form">
+              <div class="form-group">
+                <input type="search" placeholder="请输入关键词">
+                <button type="submit" class="submit"><i class="icon-search"></i></button>
+              </div>
+            </form>
+          </div>
+          <!-- Widget [Latest Posts Widget]        -->
+          <div class="widget latest-posts">
+            <header>
+              <h3 class="h6">最新发布</h3>
+            </header>
+            <div class="blog-posts"><a href="#">
+                <div class="item d-flex align-items-center">
+                  <div class="image"><img src="{{site.baseurl}}/img/small-thumbnail-1.jpg" alt="..." class="img-fluid"></div>
+                  <div class="title"><strong>工程对社会的影响</strong>
+                    <div class="d-flex align-items-center">
+                      <div class="views"><i class="icon-eye"></i> 500</div>
+                      <div class="comments"><i class="icon-comment"></i>12</div>
+                    </div>
+                  </div>
+                </div></a><a href="#">
+                <div class="item d-flex align-items-center">
+                  <div class="image"><img src="{{site.baseurl}}/img/small-thumbnail-2.jpg" alt="..." class="img-fluid"></div>
+                  <div class="title"><strong>工程对社会的影响</strong>
+                    <div class="d-flex align-items-center">
+                      <div class="views"><i class="icon-eye"></i> 500</div>
+                      <div class="comments"><i class="icon-comment"></i>12</div>
+                    </div>
+                  </div>
+                </div></a><a href="#">
+                <div class="item d-flex align-items-center">
+                  <div class="image"><img src="{{site.baseurl}}/img/small-thumbnail-3.jpg" alt="..." class="img-fluid"></div>
+                  <div class="title"><strong>工程对社会的影响</strong>
+                    <div class="d-flex align-items-center">
+                      <div class="views"><i class="icon-eye"></i> 500</div>
+                      <div class="comments"><i class="icon-comment"></i>12</div>
+                    </div>
+                  </div>
+                </div></a></div>
+          </div>
+          <!-- Widget [Categories Widget]-->
+          <div class="widget categories">
+            <header>
+              <h3 class="h6">类别</h3>
+            </header>
+            <div class="item d-flex justify-content-between"><a href="#">增长</a><span>12</span></div>
+            <div class="item d-flex justify-content-between"><a href="#">当地的</a><span>25</span></div>
+            <div class="item d-flex justify-content-between"><a href="#">销售</a><span>8</span></div>
+            <div class="item d-flex justify-content-between"><a href="#">提示</a><span>17</span></div>
+          </div>
+          <!-- Widget [Tags Cloud Widget]-->
+          <div class="widget tags">
+            <header>
+              <h3 class="h6">Tags</h3>
+            </header>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#" class="tag">#业务</a></li>
+              <li class="list-inline-item"><a href="#" class="tag">#技术</a></li>
+              <li class="list-inline-item"><a href="#" class="tag">#时尚</a></li>
+              <li class="list-inline-item"><a href="#" class="tag">#运动</a></li>
+              <li class="list-inline-item"><a href="#" class="tag">#经济</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <!-- Page Footer-->

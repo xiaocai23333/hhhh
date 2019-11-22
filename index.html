@@ -1,0 +1,134 @@
+---
+layout: base
+h1: 欢迎来到我的博客
+---
+<section class="featured-posts no-padding-top">
+  <div class="container">
+    <!-- Post-->
+ {% for post in site.posts %}
+   <div class="row d-flex align-items-stretch">
+
+         <div class="text col-lg-7">
+        <div class="text-inner d-flex align-items-center">
+          <div class="content">
+            <header class="post-header">
+              <a href="{{site.baseurl}}{{post.url}}">
+                <h2 class="h4">{{post.title}}</h2></a>
+            </header>
+            <p>{{post.test}}</p>
+            <footer class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap">
+
+                <div class="title"><span>{{post.author}}</span></div></a>
+              <div class="date"><i class="icon-clock"></i>{{post.date | date_to_long_string}}</div>
+              <div class="comments"><i class="icon-comment"></i>{{post.number}}</div>
+            </footer>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="image col-lg-5"><img src="img/featured-pic-1.jpeg" alt="..."></div>
+    </div>
+    {% endfor %}
+
+  </div>
+
+    <!-- Post        -->
+    <!-- <div class="row d-flex align-items-stretch">
+      <div class="image col-lg-5"><img src="img/featured-pic-2.jpeg" alt="..."></div>
+      <div class="text col-lg-7">
+        <div class="text-inner d-flex align-items-center">
+          <div class="content">
+            <header class="post-header">
+              <a href="post.html">
+                <h2 class="h4">工程对社会的影响</h2></a>
+            </header>
+            <p>随着社会的发展，工程化思想变得更为重要，只有将所有项目工程化后，可以保证明确的分工以及目标，才能减少所要消耗的时间，减小各种矛盾。同时对社会环境也是有很大影响的。</p>
+            <footer class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap">
+
+                <div class="title"><span>小蔡</span></div></a>
+              <div class="date"><i class="icon-clock"></i> 两年前</div>
+              <div class="comments"><i class="icon-comment"></i>12</div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Post                            -->
+    <!-- <div class="row d-flex align-items-stretch">
+      <div class="text col-lg-7">
+        <div class="text-inner d-flex align-items-center">
+          <div class="content">
+            <header class="post-header">
+            <a href="post.html">
+                <h2 class="h4">工程对社会的影响</h2></a>
+            </header>
+            <p>随着社会的发展，工程化思想变得更为重要，只有将所有项目工程化后，可以保证明确的分工以及目标，才能减少所要消耗的时间，减小各种矛盾。同时对社会环境也是有很大影响的。</p>
+            <footer class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap">
+
+                <div class="title"><span>小蔡</span></div></a>
+              <div class="date"><i class="icon-clock"></i>两年前</div>
+              <div class="comments"><i class="icon-comment"></i>12</div>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="image col-lg-5"><img src="img/featured-pic-3.jpeg" alt="..."></div>
+    </div>
+  </div> -->
+</section>
+
+<!-- Divider Section-->
+<section style="background: url(img/divider-bg.jpg); background-size: cover; background-position: center bottom" class="divider">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h2></h2><a href="#" class="hero-link"></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Latest Posts -->
+<section class="latest-posts">
+  <div class="container">
+    <header>
+      <h2>最新博客</h2>
+      <p class="text-big">我会不定时更新，谢谢大家支持</p>
+    </header>
+    <div class="row">
+      <div class="post col-md-4">
+        <div class="post-thumbnail"><a href="#"><img src="img/blog-1.jpg" alt="..." class="img-fluid"></a></div>
+        <div class="post-details">
+          <div class="post-meta d-flex justify-content-between">
+            <div class="date">2019.11.21</div>
+            <div class="category"><a href="#">社会工程</a></div>
+          </div><a href="#">
+            <h3 class="h4">工程对社会的影响</h3></a>
+          <p class="text-muted">随着社会的发展，工程化思想变得更为重要，只有将所有项目工程化后，可以保证明确的分工以及目标，才能减少所要消耗的时间，减小各种矛盾。同时对社会环境也是有很大影响的。</p>
+        </div>
+      </div>
+      <div class="post col-md-4">
+        <div class="post-thumbnail"><a href="#"><img src="img/blog-2.jpg" alt="..." class="img-fluid"></a></div>
+        <div class="post-details">
+          <div class="post-meta d-flex justify-content-between">
+            <div class="date">2019.11.21</div>
+            <div class="category"><a href="#">社会工程</a></div>
+          </div><a href="#">
+            <h3 class="h4">工程对社会的影响</h3></a>
+          <p class="text-muted">随着社会的发展，工程化思想变得更为重要，只有将所有项目工程化后，可以保证明确的分工以及目标，才能减少所要消耗的时间，减小各种矛盾。同时对社会环境也是有很大影响的。</p>
+        </div>
+      </div>
+      <div class="post col-md-4">
+        <div class="post-thumbnail"><a href="#"><img src="img/blog-3.jpg" alt="..." class="img-fluid"></a></div>
+        <div class="post-details">
+          <div class="post-meta d-flex justify-content-between">
+            <div class="date">2019.11.21</div>
+            <div class="category"><a href="#">社会工程</a></div>
+          </div><a href="#">
+            <h3 class="h4">工程对社会的影响</h3></a>
+          <p class="text-muted">随着社会的发展，工程化思想变得更为重要，只有将所有项目工程化后，可以保证明确的分工以及目标，才能减少所要消耗的时间，减小各种矛盾。同时对社会环境也是有很大影响的。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
